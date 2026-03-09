@@ -1,0 +1,36 @@
+{
+  "name": "martech-tracking-stack",
+  "version": "1.0.0",
+  "description": "Full-funnel marketing attribution: server-side GTM, offline conversions, audience sync, and BI reporting.",
+  "main": "src/index.js",
+  "scripts": {
+    "audit": "node src/tracking-debugger/discrepancy-audit.js",
+    "sync:audiences": "node src/audience-pipeline/audience-sync.js",
+    "test": "jest --coverage"
+  },
+  "keywords": [
+    "gtm",
+    "google-tag-manager",
+    "server-side-tracking",
+    "meta-capi",
+    "conversions-api",
+    "offline-conversions",
+    "hubspot",
+    "audience-sync",
+    "marketing-analytics",
+    "attribution"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "crypto": "^1.0.1",
+    "dotenv": "^16.4.5",
+    "node-fetch": "^3.3.2"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
